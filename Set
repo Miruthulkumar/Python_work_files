@@ -1,0 +1,60 @@
+
+In [1]: x={"Miruthul","Akshay","Saad","Sudharrshan","Amruth","Siddhanth"}
+
+In [2]: x
+Out[2]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
+
+In [3]: y={"Akshay","Sudharrshan"}
+
+In [4]: y
+Out[4]: {'Akshay', 'Sudharrshan'}
+
+In [5]: x.intersection(y)
+Out[5]: {'Akshay', 'Sudharrshan'}
+
+In [6]: x&y
+Out[6]: {'Akshay', 'Sudharrshan'}
+
+In [7]: x.difference(y)
+Out[7]: {'Amruth', 'Miruthul', 'Saad', 'Siddhanth'}
+
+In [8]: x
+Out[8]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
+
+In [9]: y
+Out[9]: {'Akshay', 'Sudharrshan'}
+
+In [10]: x.intersection_update(y)
+
+In [11]: x
+Out[11]: {'Akshay', 'Sudharrshan'}
+
+In [12]: y
+Out[12]: {'Akshay', 'Sudharrshan'}
+
+In [13]: x={"Miruthul","Akshay","Saad","Sudharrshan","Amruth","Siddhanth"}
+
+In [14]: x
+Out[14]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
+
+In [15]: y
+Out[15]: {'Akshay', 'Sudharrshan'}
+
+In [16]: x.union(y)
+Out[16]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
+
+In [17]: z=x.union(y)
+
+In [18]: z
+Out[18]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
+
+In [19]: z.union(x,y)
+Out[19]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
+
+In [20]: x|y|z
+Out[20]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
+
+In [21]: unionset=x|y|z
+
+In [22]: unionset
+Out[22]: {'Akshay', 'Amruth', 'Miruthul', 'Saad', 'Siddhanth', 'Sudharrshan'}
